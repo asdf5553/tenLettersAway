@@ -1,6 +1,11 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public char tenLettersAway(char letter)
+{  
+if (letter>='Q')
+{
+ letter = (char)('A'+((int)((letter-'A')-16)));
+}
+else{
+  letter = (char)(letter+10);
+  }
+  return letter;
+}
